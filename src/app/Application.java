@@ -1,4 +1,6 @@
 package app;
+import controllers.MainController;
+
 import javax.swing.*;
 
 /**
@@ -11,9 +13,14 @@ public class Application {
 
 
     //SERVICES
+    public final IMusicianService musicianService = new MusicianService();
+    public final IAlbumService albumService = new AlbumService();
+    public final ISongService songService = new  SongService();
+
 
 
     //CONTROLLERS
+    public final MainController mainController = new MainController();
 
 
     //GENERAL BEHAVIOUR

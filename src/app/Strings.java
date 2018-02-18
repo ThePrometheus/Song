@@ -6,16 +6,23 @@ package app;
 public class Strings {
     public static final String MENU_SONG = "Song";
 
-    public static final  String EDIT = "Edit";
+    public static final  String MENU_SONG_EDIT = "Edit";
 
-    public static final String NEW = "New";
+    public static final String MENU_SONG_NEW = "New";
 
-    public static final String MUSICIAN = "Musician";
+    public static final String MENU_SONG_MUSICIAN = "Musician";
 
-    public static final String ADD_MUSICIAN = "Add musician";
+    public static final String MENU_SONG_ADD_MUSICIAN = "Add musician";
 
-    public static final String SHARE = "Share";
-    public static final String CHANGE_SHARE = "Change share";
+    public static final String MENU_SONG_SHARE = "Share";
+    public static final String MENU_SONG_CHANGE_SHARE = "Change share";
+
+    public static final String MENU_SONG_HELP = "Help";
+
+    public static final String MENU_SONG_DOCS = "Docs";
+
+    public static final String MENU_SONG_ABOUT_US = "About us";
+
 
 
 }
