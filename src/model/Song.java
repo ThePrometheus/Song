@@ -2,9 +2,6 @@ package model;
 
 import app.Application;
 
-/**
- * Created by root on 18.02.18.
- */
 public class Song {
     private long id;
 
@@ -61,9 +58,10 @@ public class Song {
 
     public Album getAlbum() {
         if (album == null){
-            album = Application.self.albumService.getBy(this);
+            album = Application.self.albumService.getBy(this.album_id);
 
         }
+        return album;
     }
 
     public void setAlbum(Album album) {

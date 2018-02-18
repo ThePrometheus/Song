@@ -1,7 +1,13 @@
 package service;
 
-/**
- * Created by root on 18.02.18.
- */
-public class IAlbumService {
+import model.Album;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public interface IAlbumService {
+    List<Album> all();
+    Album getBy(long id);
+    boolean insert(Album album);
+    boolean update(Album album) throws SQLException;
 }
