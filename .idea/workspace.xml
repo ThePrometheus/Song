@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17c80f0-e1fc-458b-8b3d-5667e0e1ac50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/miglayout-core-javadoc.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/miglayout-core-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/miglayout-core.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/miglayout-swing-javadoc.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/miglayout-swing-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/miglayout-swing.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controllers/SongViewController.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controllers/SongViewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Song.jfd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/repository/IAlbumPriceRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/repository/impl/AlbumPriceRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Studio.iml" afterPath="$PROJECT_DIR$/Studio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Application.java" afterPath="$PROJECT_DIR$/src/app/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Strings.java" afterPath="$PROJECT_DIR$/src/app/Strings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Song.java" afterPath="$PROJECT_DIR$/src/model/Song.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/IAlbumRepository.java" afterPath="$PROJECT_DIR$/src/repository/IAlbumRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/IMusicianRepository.java" afterPath="$PROJECT_DIR$/src/repository/IMusicianRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/ISongRepository.java" afterPath="$PROJECT_DIR$/src/repository/ISongRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/impl/AlbumRepository.java" afterPath="$PROJECT_DIR$/src/repository/impl/AlbumRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/impl/MusicianRepository.java" afterPath="$PROJECT_DIR$/src/repository/impl/MusicianRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/impl/SongRepository.java" afterPath="$PROJECT_DIR$/src/repository/impl/SongRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/IAlbumService.java" afterPath="$PROJECT_DIR$/src/service/IAlbumService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/IMusicianService.java" afterPath="$PROJECT_DIR$/src/service/IMusicianService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/ISongService.java" afterPath="$PROJECT_DIR$/src/service/ISongService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/impl/AlbumService.java" afterPath="$PROJECT_DIR$/src/service/impl/AlbumService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/impl/MusicianService.java" afterPath="$PROJECT_DIR$/src/service/impl/MusicianService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/impl/SongService.java" afterPath="$PROJECT_DIR$/src/service/impl/SongService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -255,27 +228,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SongRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SongRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/repository/impl/SongRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="-67">
+              <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1518977986820" expanded="true" signature="1620:1638" ph="SELECT * FRO... song" />
-                <marker date="1518977986820" expanded="true" signature="1685:1714" ph="SELECT * FRO... song" />
-                <marker date="1518977986820" expanded="true" signature="1760:1812" ph="INSERT INTO song... " />
-                <marker date="1518977986820" expanded="true" signature="1856:1910" ph="UPDATE song " />
+                <marker date="1518978142601" expanded="true" signature="1973:1991" ph="SELECT * FRO... song" />
+                <marker date="1518978142601" expanded="true" signature="2038:2067" ph="SELECT * FRO... song" />
+                <marker date="1518978142601" expanded="true" signature="2113:2165" ph="INSERT INTO song... " />
+                <marker date="1518978142601" expanded="true" signature="2209:2263" ph="UPDATE song " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlbumRepository.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlbumRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/repository/impl/AlbumRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1211">
-              <caret line="93" column="49" lean-forward="false" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
+            <state relative-caret-position="-89">
+              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
               <folding>
                 <marker date="1518970418595" expanded="true" signature="2919:3131" ph="SELECT * FRO... album" />
                 <marker date="1518970418595" expanded="true" signature="2958:3080" ph="SELECT id, (... album" />
@@ -1051,12 +1024,12 @@
       <option name="presentableId" value="Default" />
       <updated>1518966648737</updated>
       <workItem from="1518966656853" duration="290000" />
-      <workItem from="1518967014084" duration="10858000" />
+      <workItem from="1518967014084" duration="11660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11148000" />
+    <option name="totallyTimeSpent" value="11950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -1074,9 +1047,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28951746" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34080717" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34080717" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24750192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15449654" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1483,10 +1456,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/repository/impl/SongRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1518978142601" expanded="true" signature="1973:1991" ph="SELECT * FRO... song" />
+            <marker date="1518978142601" expanded="true" signature="2038:2067" ph="SELECT * FRO... song" />
+            <marker date="1518978142601" expanded="true" signature="2113:2165" ph="INSERT INTO song... " />
+            <marker date="1518978142601" expanded="true" signature="2209:2263" ph="UPDATE song " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/repository/impl/AlbumRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1211">
-          <caret line="93" column="49" lean-forward="false" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
+        <state relative-caret-position="-89">
+          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
           <folding>
             <marker date="1518970418595" expanded="true" signature="2919:3131" ph="SELECT * FRO... album" />
             <marker date="1518970418595" expanded="true" signature="2958:3080" ph="SELECT id, (... album" />
@@ -1499,20 +1486,6 @@
             <marker date="1518970418595" expanded="true" signature="3280:3305" ph="SELECT COUNT... sale" />
             <marker date="1518970418595" expanded="true" signature="3408:3506" ph="INSERT INTO album... " />
             <marker date="1518970418595" expanded="true" signature="3553:3652" ph="UPDATE album... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/repository/impl/SongRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1518977986820" expanded="true" signature="1620:1638" ph="SELECT * FRO... song" />
-            <marker date="1518977986820" expanded="true" signature="1685:1714" ph="SELECT * FRO... song" />
-            <marker date="1518977986820" expanded="true" signature="1760:1812" ph="INSERT INTO song... " />
-            <marker date="1518977986820" expanded="true" signature="1856:1910" ph="UPDATE song " />
           </folding>
         </state>
       </provider>

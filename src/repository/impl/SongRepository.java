@@ -51,7 +51,16 @@ public class SongRepository implements ISongRepository {
 
     @Override
     public boolean update(Song song) throws SQLException {
-        return false;
+        Connection c = DBConnector.shared.getConnect();
+        PreparedStatement ps = c.prepareStatement(update);
+        ps.setString(1,song.getAuthor());
+        ps.setString(2,song.getName());
+        ps.setLong(3,song.getAlbum_id());
+        ps.setLong(4,song.getId());
+
+        int songCode = ps.executeUpdate();
+        return songCode== Constants.DB_SUCCESS_EXECUTION_CODE;
+
     }
     // SQL queries
     private static final String  getAll = "SELECT * FROM song;";
