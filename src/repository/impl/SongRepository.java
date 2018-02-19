@@ -1,5 +1,6 @@
 package repository.impl;
 
+import app.Application;
 import app.Constants;
 import app.DBConnector;
 import model.Album;
@@ -21,8 +22,13 @@ public class SongRepository implements ISongRepository {
     @Override
     public List<Song> all() throws SQLException {
         Connection c = DBConnector.shared.getConnect();
+        System.out.println("Connected");
+
+
         PreparedStatement ps = c.prepareStatement(getAll);
         ResultSet result = ps.executeQuery();
+
+        System.out.println("Executed query");
         return listSongsFrom(result);
     }
 
@@ -63,9 +69,9 @@ public class SongRepository implements ISongRepository {
 
     }
     // SQL queries
-    private static final String  getAll = "SELECT * FROM song;";
+    private static final String  getAll = "SELECT * FROM song ;";
     private static final String getById = "SELECT * FROM song WHERE id=?;";
-    private static final String insert = "INSERT INTO song(author,name,album_id) VALUES(?,?,?);"
+    private static final String insert = "INSERT INTO song(author,name,album_id) VALUES(?,?,?);";
 
     private static final String update="UPDATE song  SET author=?,name=?,album_id=? WHERE id=?; ";
     private List<Song> listSongsFrom(ResultSet resultSet) throws SQLException {
@@ -82,8 +88,22 @@ public class SongRepository implements ISongRepository {
         song.setAuthor(resultSet.getString("author"));
         song.setName(resultSet.getString("name"));
         song.setAlbum_id(resultSet.getLong("album_id"));
+        System.out.println("Create song");
+
 
         return song;
+    }
+
+    public static void main(String[] args){
+        SongRepository sr = new SongRepository();
+        try {
+       List<Song>   res =   sr.all();
+            for (Song s : res){
+                System.out.println(s.toString());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }

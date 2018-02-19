@@ -1,6 +1,7 @@
 package service.impl;
 
 import model.Song;
+import repository.impl.SongRepository;
 import service.ISongService;
 
 import service.IAlbumService;
@@ -18,8 +19,10 @@ public class SongService implements ISongService {
     @Override
     public List<Song> all() {
         List<Song> res = null;
+        SongRepository sr = new SongRepository();
         try {
-            res = Application.self.songRepository.all();
+
+            res = sr.all();
         } catch (SQLException e) {
             e.printStackTrace();
         }

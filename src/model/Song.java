@@ -9,8 +9,7 @@ public class Song {
     private String name;
     private long album_id;
 
-    private Musician musician;
-     private Album album;
+
 
 
     public Song() {
@@ -48,24 +47,15 @@ public class Song {
         this.album_id = album_id;
     }
 
-    public Musician getMusician() {
-        return musician;
-    }
 
-    public void setMusician(Musician musician) {
-        this.musician = musician;
-    }
-
-    public Album getAlbum() {
-        if (album == null){
-            album = Application.self.albumService.getBy(this.album_id);
-
-        }
-        return album;
-    }
-
-    public void setAlbum(Album album) {
-        this.album = album;
+    @Override
+    public String toString() {
+        return "Song{" +
+                "id=" + id +
+                ", author='" + author + '\'' +
+                ", name='" + name + '\'' +
+                ", album_id=" + album_id +
+                '}';
     }
 
     public Song(long id, String author, String name, long album_id) {

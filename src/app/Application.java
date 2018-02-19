@@ -1,5 +1,6 @@
 package app;
 import controllers.MainController;
+import controllers.SongViewController;
 import repository.IAlbumPriceRepository;
 import repository.IAlbumRepository;
 import repository.IMusicianRepository;
@@ -21,7 +22,7 @@ import javax.swing.*;
  * Created by root on 18.02.18.
  */
 public class Application {
-    public final static Application self = new Application();
+    public final  static Application self = new Application();
 
     // REPOSITORIES
 
@@ -40,6 +41,7 @@ public class Application {
 
     //CONTROLLERS
     public final MainController mainController = new MainController();
+    public  SongViewController songViewController;
 
 
     //GENERAL BEHAVIOUR

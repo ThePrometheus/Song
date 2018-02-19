@@ -11,6 +11,8 @@ import javax.swing.*;
 public class Launch {
 
     public static void main (String[] args) throws SQLException {
+
+
         javax.swing.SwingUtilities.invokeLater(Application.self.mainController::createAndShowGUI);
     }
 }

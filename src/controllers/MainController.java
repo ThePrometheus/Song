@@ -22,10 +22,10 @@ public class MainController {
         frame.setMinimumSize(new Dimension(600, 400));
 
         setMenuBar();
-/*
-        Application.self.songViewController = new songViewController();
+
+        Application.self.songViewController = new SongViewController();
         frame.add(Application.self.songViewController.getContentView());
-*/
+
         //Display the window.
         frame.pack();
         frame.setVisible(true);

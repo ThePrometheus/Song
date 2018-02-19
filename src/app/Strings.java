@@ -24,6 +24,7 @@ public class Strings {
     public static final String MENU_SONG_ABOUT_US = "About us";
 
     public static final String  DIALOG_FAILED_INSERTIONS_SONG = " Failed at insertion of song";
+    public static final String DIALOG_WRONG_SHARE = "Wrong share";
 
 
 

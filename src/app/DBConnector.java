@@ -8,7 +8,7 @@ import java.sql.*;
 public class DBConnector {
     public static DBConnector shared = new DBConnector();
 
-    private static final String CONN_URL = "jdbc:mysql://localhost/studio?"+"user=root&password=root";
+    private static final String CONN_URL = "jdbc:mysql://localhost/studio?"+"user=root&password=N@z@rtk@ch3";
 
     private Connection connection = null;
 
