@@ -1,6 +1,7 @@
 package service;
 
 import model.Album;
+import model.Musician;
 import model.Song;
 
 import java.sql.SQLException;
@@ -12,4 +13,6 @@ public interface ISongService {
     Song getBy(long id);
     boolean insert(Song song);
     boolean update(Song song) throws SQLException;
+    List<Musician> getSongMusicians(long id);
+
 }

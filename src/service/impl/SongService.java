@@ -1,5 +1,6 @@
 package service.impl;
 
+import model.Musician;
 import model.Song;
 import repository.impl.SongRepository;
 import service.ISongService;
@@ -56,5 +57,20 @@ public class SongService implements ISongService {
         boolean success = Application.self.songRepository.update(song);
 
         return success;
+    }
+    @Override
+    public List<Musician> getSongMusicians(long id) {
+
+        List<Musician>res = null;
+        SongRepository sr = new SongRepository();
+        try {
+
+            res = sr.getSongMusicians(id);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return res;
+
     }
 }

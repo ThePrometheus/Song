@@ -4,6 +4,7 @@ import app.Application;
 import app.Constants;
 import app.DBConnector;
 import model.Album;
+import model.Musician;
 import model.Song;
 import repository.ISongRepository;
 
@@ -12,6 +13,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -68,11 +70,13 @@ public class SongRepository implements ISongRepository {
         return songCode== Constants.DB_SUCCESS_EXECUTION_CODE;
 
     }
+
+
     // SQL queries
     private static final String  getAll = "SELECT * FROM song ;";
-    private static final String getById = "SELECT * FROM song WHERE id=?;";
+    private static final  String getMusicians  = "SELECT *  FROM musician JOIN musician_song ON musician.id = musician_song.musician_id WHERE song_id=?;";
     private static final String insert = "INSERT INTO song(author,name,album_id) VALUES(?,?,?);";
-
+private static final String getById = "SELECT * FROM song WHERE id=?;";
     private static final String update="UPDATE song  SET author=?,name=?,album_id=? WHERE id=?; ";
     private List<Song> listSongsFrom(ResultSet resultSet) throws SQLException {
         List<Song> list = new ArrayList<>();
@@ -80,6 +84,37 @@ public class SongRepository implements ISongRepository {
             list.add(songFrom(resultSet));
         }
         return list;
+    }
+
+    public List<Musician> getSongMusicians(long id) throws SQLException {
+        Connection c = DBConnector.shared.getConnect();
+        PreparedStatement ps = c.prepareStatement(getMusicians);
+        ps.setLong(1,id);
+        List<Musician> musList = new ArrayList<>();
+        ResultSet resultSet = ps.executeQuery();
+
+        while(resultSet.next()){
+            musList.add(musicianFrom(resultSet));
+
+
+
+        }
+        return musList;
+
+
+
+
+    }
+    private Musician musicianFrom(ResultSet resultSet) throws SQLException {
+        Musician musician = new Musician();
+        musician.setId(resultSet.getLong("id"));
+        musician.setName(resultSet.getString("name"));
+        musician.setLastName(resultSet.getString("last_name"));
+        musician.setPhone(resultSet.getString("phone"));
+//        try {
+        musician.setRating(resultSet.getDouble("fee_share"));
+//        } catch (Exception e) {/*intentionally nothing*/}
+        return musician;
     }
 
     private Song songFrom(ResultSet resultSet) throws SQLException {
@@ -97,8 +132,8 @@ public class SongRepository implements ISongRepository {
     public static void main(String[] args){
         SongRepository sr = new SongRepository();
         try {
-       List<Song>   res =   sr.all();
-            for (Song s : res){
+       List<Musician>   res =   sr.getSongMusicians(1);
+            for (Musician s : res){
                 System.out.println(s.toString());
             }
         } catch (SQLException e) {

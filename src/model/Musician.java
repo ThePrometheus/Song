@@ -11,6 +11,13 @@ public class Musician {
     private String phone;
     private Double rating;
 
+    public Musician(long id, String name, String lastName, String phone) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.phone = phone;
+    }
+
     public Musician(long id, String name, String lastName, String phone, Double rate) {
         this.id = id;
         this.name = name;
@@ -75,4 +82,13 @@ public class Musician {
         return id == musician.id;
     }
 
+    @Override
+    public int hashCode() {
+        int result = (int) (id ^ (id >>> 32));
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (phone != null ? phone.hashCode() : 0);
+        result = 31 * result + (rating != null ? rating.hashCode() : 0);
+        return result;
+    }
 }
