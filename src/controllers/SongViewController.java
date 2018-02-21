@@ -16,7 +16,7 @@ public class SongViewController {
 
     private Song currentSong;
 
-    private JList<Song> songLabel;
+    private JList<Song> songList;
 
     private JPanel contentView = new JPanel();
 
@@ -24,27 +24,29 @@ public class SongViewController {
 
    private JLabel albumNameLabel = new JLabel();
 
-    private JLabel authorNameLabel= new JLabel();
+    private JLabel authorLabel= new JLabel();
 
     private JLabel  musicianNameLabel =new JLabel();
+    private JLabel musicianLastNameLabel = new JLabel();
 
-    private JLabel musicianFeelabel = new JLabel();
-    private JButton musicianNewFeeButton = new JButton();
+    private JLabel musicianShareLabel = new JLabel();
+    private JButton newShareButton = new JButton();
 
     private JLabel musicianInstrumentLabel = new JLabel();
-    private JScrollPane ScrollList;
+
+
+
 
 
     public SongViewController(){
-        reloadData();
+
         reloadListData();
 
-        songLabel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        songList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
-        songLabel.addListSelectionListener(e -> didSelectListItem(e));
-        songLabel.setSelectedIndex(0);
-        musicianNewFeeButton.addActionListener(e -> editFeeMusician(e));
-        contentView.add(songLabel);
+        songList.addListSelectionListener(e -> didSelectListItem(e));
+        songList.setSelectedIndex(0);
+        newShareButton.addActionListener(e -> editFeeMusician(e));
 
 
 
@@ -53,8 +55,10 @@ public class SongViewController {
     public JPanel getContentView(){
         return contentView;
     }
+
+
     public long getCurrentId(){
-        int index = songLabel.getSelectedIndex();
+        int index = songList.getSelectedIndex();
         if(index <0) return -1;
         currentSong = dataSource.get(index);
         return currentSong.getId();
@@ -73,7 +77,7 @@ public class SongViewController {
             dlm.addElement(s);
             System.out.println("added song"+s.toString());
         }
-        songLabel.setModel(dlm);
+        songList.setModel(dlm);
 
 
     }
@@ -88,7 +92,7 @@ public class SongViewController {
         if (currentSong == null) return;
         songNameLabel.setText(currentSong.getName());
         albumNameLabel.setText(currentSong.toString());
-        authorNameLabel.setText(currentSong.getAuthor());
+        authorLabel.setText(currentSong.getAuthor());
 
 
 
@@ -104,7 +108,7 @@ public class SongViewController {
 
 
     private void didSelectListItem(ListSelectionEvent e){
-        int index =   songLabel.getSelectedIndex();
+        int index =   songList.getSelectedIndex();
         if (index <0)    return;
         currentSong = dataSource.get(index);
 
