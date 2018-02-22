@@ -207,6 +207,8 @@ public class SongViewController {
             Double fee = null;
             try {
                 fee = Double.parseDouble(feeShare.getText());
+                ms.setFee_share(fee);
+
             } catch (NumberFormatException ex) {
                 Application.showMessage(Strings.DIALOG_NUMBER_FORMAT_ERROR);
                 return;
@@ -216,6 +218,7 @@ public class SongViewController {
 
             try {
                 Application.self.musicianSongRepository.insert(ms);
+                Application.showMessage(Strings.DIALOG_MUSICIAN_ADDED_TO_SONG);
             } catch (Exception ex) {
                 Application.showMessage(ex.getMessage());
             }

@@ -62,7 +62,7 @@ public class SongDetailsController  extends JDialog{
         
     }
     public SongDetailsController(boolean createNew){
-        assert(!createNew);
+        assert(createNew);
         this.createNew = createNew;
         setup();
     }
@@ -97,11 +97,7 @@ public class SongDetailsController  extends JDialog{
     private void setupComponents() {
         musicians = Application.self.musicianService.all();
         albums = Application.self.albumService.all();
-        try {
-            musicianSong  = Application.self.musicianSongRepository.getMusicians(currentSong.getId());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
 
 
         DefaultComboBoxModel<Musician> dlm = new DefaultComboBoxModel<>();
@@ -116,11 +112,19 @@ public class SongDetailsController  extends JDialog{
         }
         albumBox.setModel(dla);
 
-        windowLabel.setText((this.createNew) ? Strings.DIALOG_NEW_TITLE : Strings.DIALOG_EDIT_TITLE);
+        windowLabel.setText((this.createNew) ? Strings.DIALOG_NEW_SONG_TITLE : Strings.DIALOG_EDIT_SONG_TITLE);
 
         if (!this.createNew) {
+
+            try {
+                musicianSong  = Application.self.musicianSongRepository.getMusicians(currentSong.getId());
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
             nameInput.setText(currentSong.getName());
             String author = currentSong.getAuthor();
+            authorInput.setText(author);
 
            // albumInput.setText(String.valueOf(currentSong.getAlbum_id()));
             musicianShare.setText(String.valueOf(musicianSong.get(0).getFee_share()));
@@ -147,9 +151,12 @@ public class SongDetailsController  extends JDialog{
             Application.showMessage(Strings.DIALOG_WRONG_ALBUM_ERROR);
             return;}
 
+
+
         try {
             if (createNew) {
                 Application.self.songService.insert(song);
+
             } else {
                 Application.self.songService.update(song);
             }

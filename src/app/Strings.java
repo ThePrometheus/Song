@@ -29,6 +29,11 @@ public class Strings {
    public  static final String  DIALOG_EMPTY_AUTHOR_ERROR = "Please input author name";
    public static final String  DIALOG_WRONG_ALBUM_ERROR = "Wrong album name";
    public static final String DIALOG_ADD_MUSICIAN = "Add musician";
+   public static final String DIALOG_MUSICIAN_ADDED_TO_SONG  = "SUCCESS. Musician added";
+   public static final String DIALOG_NEW_SONG_TITLE="New song:";
+    public static final String DIALOG_EDIT_SONG_TITLE="Edit song:";
+
+
 
 
 
