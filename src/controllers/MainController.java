@@ -41,9 +41,9 @@ public class MainController {
         JMenuItem songNewItem = new JMenuItem(Strings.MENU_SONG_NEW);
 
 
-      //  songNewItem.addActionListener(e -> SongDetailsController.presentDialog(true));
+        songNewItem.addActionListener(e -> SongDetailsController.presentDialog(true));
 
-/*
+
         songMenu.add(songNewItem);
         JMenuItem songEditCurrent = new JMenuItem(Strings.MENU_SONG_EDIT);
 
@@ -52,7 +52,7 @@ public class MainController {
         songMenu.add(songEditCurrent);
 
         menuBar.add(songMenu);
-*/
+
         //help menu
         JMenu helpMenu = new JMenu(Strings.MENU_SONG_HELP);
         JMenuItem docsItem = new JMenuItem(Strings.MENU_SONG_DOCS);

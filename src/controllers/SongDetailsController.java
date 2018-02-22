@@ -2,7 +2,9 @@ package controllers;
 
 import app.Application;
 import app.Strings;
+import model.Album;
 import model.Musician;
+import model.MusicianSong;
 import model.Song;
 
 import javax.swing.*;
@@ -10,6 +12,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.sql.SQLException;
 import java.util.*;
 import java.util.List;
 
@@ -25,7 +28,7 @@ public class SongDetailsController  extends JDialog{
 
     private JTextField nameInput;
 
-    private JPanel authorInput;
+
 
     private JTextField albumInput;
 
@@ -36,8 +39,12 @@ public class SongDetailsController  extends JDialog{
     
     private JButton buttonOK;
     private JButton buttonCancel;
-    
+    private JComboBox albumBox;
+
     private List<Musician> musicians;
+    private List<Album> albums;
+    private List<MusicianSong> musicianSong;
+    private JTextField authorInput;
 
     private Song currentSong;
     public SongDetailsController( boolean createNew, long id ){
@@ -89,21 +96,35 @@ public class SongDetailsController  extends JDialog{
 
     private void setupComponents() {
         musicians = Application.self.musicianService.all();
+        albums = Application.self.albumService.all();
+        try {
+            musicianSong  = Application.self.musicianSongRepository.getMusicians(currentSong.getId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
         DefaultComboBoxModel<Musician> dlm = new DefaultComboBoxModel<>();
         for (Musician m : musicians) {
             dlm.addElement(m);
         }
         musicianBox.setModel(dlm);
+
+        DefaultComboBoxModel<Album> dla = new DefaultComboBoxModel<>();
+        for (Album a : albums){
+            dla.addElement(a);
+        }
+        albumBox.setModel(dla);
+
         windowLabel.setText((this.createNew) ? Strings.DIALOG_NEW_TITLE : Strings.DIALOG_EDIT_TITLE);
 
         if (!this.createNew) {
             nameInput.setText(currentSong.getName());
             String author = currentSong.getAuthor();
 
-            albumInput.setText(String.valueOf(currentSong.getAlbum_id()));
-            musicianShare.setText(String.valueOf(musicians.get(0).getRating()));
-            musicianBox.setSelectedIndex(dlm.getIndexOf(currentSong.getAuthor()));
+           // albumInput.setText(String.valueOf(currentSong.getAlbum_id()));
+            musicianShare.setText(String.valueOf(musicianSong.get(0).getFee_share()));
+            musicianBox.setSelectedIndex(dlm.getIndexOf(musicianSong.get(0).getMusician_id()));
 
         }
     }
@@ -116,6 +137,29 @@ public class SongDetailsController  extends JDialog{
             Application.showMessage(Strings.DIALOG_EMPTY_NAME_ERROR);
             return;
         }
+        song.setAuthor(authorInput.getText());
+        if(song.getAuthor() == null){
+            Application.showMessage(Strings.DIALOG_EMPTY_AUTHOR_ERROR);
+            return;}
+
+        song.setAlbum_id(albumBox.getSelectedIndex() );
+        if(song.getAlbum_id()<0) {
+            Application.showMessage(Strings.DIALOG_WRONG_ALBUM_ERROR);
+            return;}
+
+        try {
+            if (createNew) {
+                Application.self.songService.insert(song);
+            } else {
+                Application.self.songService.update(song);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+
+
+
 
 
 

@@ -1,5 +1,6 @@
 package repository.impl;
 
+import app.Constants;
 import app.DBConnector;
 import model.Musician;
 import model.MusicianSong;
@@ -29,8 +30,22 @@ public class MusicianSongRepository implements IMusicianSongRepository {
 
     }
 
-    private final static String getMusicianShare = "SELECT * FROM musician_song WHERE song_id =?;";
+    @Override
+    public boolean insert(MusicianSong musicianSong) throws SQLException {
+        Connection c = DBConnector.shared.getConnect();
+        PreparedStatement ps = c.prepareStatement(insert);
+        ps.setLong(1,musicianSong.getMusician_id());
+        ps.setLong(2,musicianSong.getSong_id());
+        ps.setDouble(3,musicianSong.getFee_share());
+        int songCode = ps.executeUpdate();
+        return songCode== Constants.DB_SUCCESS_EXECUTION_CODE;
 
+
+    }
+
+
+    private final static String getMusicianShare = "SELECT * FROM musician_song WHERE song_id =?;";
+private final static String insert = "INSERT  INTO musician_song(musician_id,song_id,fee_share) VALUES(?,?,?);";
     private List<MusicianSong> listMusicianSongFrom(ResultSet resultSet) throws SQLException {
         List<MusicianSong> list = new ArrayList<>();
         while (resultSet.next()) {

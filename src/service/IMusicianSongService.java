@@ -11,6 +11,8 @@ import java.util.List;
 public interface IMusicianSongService {
 
     List<MusicianSong> getById(long id) throws SQLException;
+    boolean insert (MusicianSong musicianSong) throws  SQLException;
+
 
 
 }

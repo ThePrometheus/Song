@@ -26,6 +26,13 @@ public class Strings {
     public static final String  DIALOG_FAILED_INSERTIONS_SONG = " Failed at insertion of song";
     public static final String DIALOG_WRONG_SHARE = "Wrong share";
 
+   public  static final String  DIALOG_EMPTY_AUTHOR_ERROR = "Please input author name";
+   public static final String  DIALOG_WRONG_ALBUM_ERROR = "Wrong album name";
+   public static final String DIALOG_ADD_MUSICIAN = "Add musician";
+
+
+
+
 
 
 

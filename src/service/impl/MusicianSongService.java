@@ -17,4 +17,9 @@ public class MusicianSongService implements IMusicianSongService {
         return Application.self.musicianSongRepository.getMusicians(id);
 
     }
+
+    @Override
+    public boolean insert(MusicianSong musicianSong) throws SQLException {
+        return  Application.self.musicianSongRepository.insert(musicianSong);
+    }
 }
