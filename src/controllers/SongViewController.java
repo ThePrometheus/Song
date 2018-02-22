@@ -11,31 +11,34 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 
 import java.awt.event.ActionEvent;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SongViewController {
     private List<Song> dataSource;
 
-    private Song currentSong;
+
+    private Song currentSong ;
 
     private JList<Song> songList;
 
-    private JPanel contentView = new JPanel();
+    private JPanel contentView ;
 
-    private JLabel songNameLabel = new JLabel();
+    private JLabel songNameLabel ;
 
-    private JLabel albumNameLabel = new JLabel();
+    private JLabel albumNameLabel ;
 
-    private JLabel authorLabel = new JLabel();
+    private JLabel authorLabel ;
 
-    private JLabel musicianNameLabel = new JLabel();
-    private JLabel musicianLastNameLabel = new JLabel();
+    private JLabel musicianNameLabel ;
+    private JLabel musicianLastNameLabel ;
 
-    private JButton addMusician = new JButton();
+    private JButton addMusician;
 
-    private JLabel musicianInstrumentLabel = new JLabel();
-    private List<Musician> musicians = new ArrayList<>();
+    private JLabel musicianShareLabel ;
+    private JPanel songInfoPanel;
+    private List<Musician> musicians ;
 
 
     public SongViewController() {
@@ -88,11 +91,83 @@ public class SongViewController {
 
     }
 
-    private void repaintDetails() {
+    private void repaintDetails()  {
         if (currentSong == null) return;
+
         songNameLabel.setText(currentSong.getName());
-        albumNameLabel.setText(currentSong.toString());
+
+        long album_id = currentSong.getAlbum_id();
+
+        String albumName = null;
+
+        try{
+            albumName = Application.self.albumRepository.getBy(album_id).getName();
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        albumNameLabel.setText(albumName);
         authorLabel.setText(currentSong.getAuthor());
+
+
+        //add at least one musician
+
+       List<Musician> mList = new ArrayList<>();
+
+       try{
+           mList= Application.self.songService.getSongMusicians(getCurrentId());
+       }catch(Exception e){
+           e.printStackTrace();
+       }
+
+       musicianLastNameLabel.setText(mList.get(0).getLastName());
+       musicianNameLabel.setText(mList.get(0).getName());
+       long mus_id = mList.get(0).getId();
+        double fee_share = 0;
+        try {
+            fee_share = Application.self.musicianSongRepository.getFee(mus_id,getCurrentId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        musicianShareLabel.setText(String.valueOf(fee_share));
+
+        for (int i=1;i<mList.size();i++){
+            JPanel musNamePanel = new JPanel();
+            JPanel musLastnamePanel = new JPanel();
+            JPanel musFeePanel = new JPanel();
+            JLabel musNameLabel = new JLabel("Name:");
+            JLabel musLastnameLabel = new JLabel("Last name:");
+            JLabel musFeeSharelabel = new JLabel("Fee:");
+            musNameLabel.setText(mList.get(i).getName());
+            musLastnameLabel.setText(mList.get(i).getLastName());
+            long temp_id = mList.get(i).getId();
+            double temp_fee_share = 0;
+            try {
+                temp_fee_share = Application.self.musicianSongRepository.getFee(temp_id,getCurrentId());
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            musFeeSharelabel.setText(String.valueOf(temp_fee_share));
+            musNamePanel.add(musNameLabel);
+            musLastnamePanel.add(musLastnameLabel);
+            musFeePanel.add(musFeeSharelabel);
+            //songInfoPanel.add(musNamePanel);
+            //songInfoPanel.add(musLastnamePanel);
+            //songInfoPanel.add(musFeePanel);
+
+
+
+
+
+
+
+        }
+
+
 
 
     }

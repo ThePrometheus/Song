@@ -22,4 +22,9 @@ public class MusicianSongService implements IMusicianSongService {
     public boolean insert(MusicianSong musicianSong) throws SQLException {
         return  Application.self.musicianSongRepository.insert(musicianSong);
     }
+
+    @Override
+    public double getFee(long mid, long sid) throws  SQLException{
+        return Application.self.musicianSongRepository.getFee(mid,sid);
+    }
 }

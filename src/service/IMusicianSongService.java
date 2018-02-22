@@ -12,6 +12,7 @@ public interface IMusicianSongService {
 
     List<MusicianSong> getById(long id) throws SQLException;
     boolean insert (MusicianSong musicianSong) throws  SQLException;
+    double getFee(long mid,long sid) throws  SQLException;
 
 
 

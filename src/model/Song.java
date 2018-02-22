@@ -50,12 +50,7 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Song{" +
-                "id=" + id +
-                ", author='" + author + '\'' +
-                ", name='" + name + '\'' +
-                ", album_id=" + album_id +
-                '}';
+        return this.getName();
     }
 
     public Song(long id, String author, String name, long album_id) {

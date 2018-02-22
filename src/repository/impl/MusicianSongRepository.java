@@ -2,8 +2,10 @@ package repository.impl;
 
 import app.Constants;
 import app.DBConnector;
+import com.sun.org.apache.regexp.internal.RE;
 import model.Musician;
 import model.MusicianSong;
+import model.Song;
 import repository.IMusicianSongRepository;
 import service.IMusicianSongService;
 
@@ -25,9 +27,18 @@ public class MusicianSongRepository implements IMusicianSongRepository {
         PreparedStatement ps = c.prepareStatement(getMusicianShare);
         ps.setLong(1, id);
         List<MusicianSong> result = listMusicianSongFrom(ps.executeQuery());
-        return (result.isEmpty()) ? null : (List<MusicianSong>) result.get(0);
+        return result;
 
 
+
+
+    }
+    private List<MusicianSong> listSongsFrom(ResultSet resultSet) throws SQLException {
+        List<MusicianSong> list = new ArrayList<>();
+        while (resultSet.next()) {
+            list.add(musicianSongFrom(resultSet));
+        }
+        return list;
     }
 
     @Override
@@ -43,7 +54,28 @@ public class MusicianSongRepository implements IMusicianSongRepository {
 
     }
 
+    @Override
+    public double getFee(long mid, long sid) throws SQLException {
+        Connection c = DBConnector.shared.getConnect();
+        PreparedStatement ps = c.prepareStatement(Fee);
+        ps.setLong(1,mid);
+        ps.setLong(2,sid);
+        double fee = fee(ps.executeQuery());
 
+
+        return fee;
+    }
+
+    private double fee(ResultSet resultSet) throws  SQLException{
+        double res=0;
+        while(resultSet.next()){
+            res= resultSet.getDouble("fee_share");
+        }
+        return res;
+
+    }
+
+private final static String Fee = "SELECT fee_share FROM musician_song WHERE musician_id=? AND song_id =?;";
     private final static String getMusicianShare = "SELECT * FROM musician_song WHERE song_id =?;";
 private final static String insert = "INSERT  INTO musician_song(musician_id,song_id,fee_share) VALUES(?,?,?);";
     private List<MusicianSong> listMusicianSongFrom(ResultSet resultSet) throws SQLException {
