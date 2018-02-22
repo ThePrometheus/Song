@@ -13,6 +13,7 @@ import javax.swing.event.ListSelectionEvent;
 import java.awt.event.ActionEvent;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SongViewController {
@@ -185,6 +186,7 @@ public class SongViewController {
 
     private void addMusician(ActionEvent e) {
         musicians = Application.self.musicianService.all();
+        Collections.sort(musicians,Musician.musComparator);
         JTextField feeShare = new JTextField();
         JComboBox musicianBox = new JComboBox();
 

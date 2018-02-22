@@ -1,9 +1,11 @@
 package model;
 
+import java.util.Comparator;
+
 /**
  * Created by root on 18.02.18.
  */
-public class Musician {
+public class Musician  {
 
     private long id;
     private String name;
@@ -91,4 +93,16 @@ public class Musician {
         result = 31 * result + (rating != null ? rating.hashCode() : 0);
         return result;
     }
+
+    public static Comparator<Musician> musComparator = new Comparator<Musician>() {
+
+        public int compare(Musician s1, Musician s2) {
+          long firstId = s1.getId();
+          long secondId = s2.getId();
+          return (int)(firstId-secondId);
+
+        }};
+
+
+
 }
