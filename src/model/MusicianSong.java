@@ -66,10 +66,7 @@ public class MusicianSong {
 
     @Override
     public String toString() {
-        return "MusicianSong{" +
-                "musician_id=" + musician_id +
-                ", song_id=" + song_id +
-                ", fee_share=" + fee_share +
-                '}';
+        return String.valueOf(musician_id);
+
     }
 }

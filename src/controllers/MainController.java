@@ -50,6 +50,10 @@ public class MainController {
         songEditCurrent.addActionListener(e -> SongDetailsController.presentDialog(false,
                 Application.self.songViewController.getCurrentId()));
         songMenu.add(songEditCurrent);
+        JMenuItem songMusicianShareMenu = new JMenuItem(Strings.MENU_MUSICIAN_SHARE);
+        songMusicianShareMenu.addActionListener(e -> SongMusicianController.presentDialog(Application.self.songViewController.getCurrentId()));
+
+        songMenu.add(songMusicianShareMenu);
 
         menuBar.add(songMenu);
 

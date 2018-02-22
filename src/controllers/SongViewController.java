@@ -194,7 +194,7 @@ public class SongViewController {
 
     }
 
-    private void addMusician(ActionEvent e) {
+    public void addMusician(ActionEvent e) {
         musicians = Application.self.musicianService.all();
         Collections.sort(musicians,Musician.musComparator);
         JTextField feeShare = new JTextField();

@@ -1,5 +1,6 @@
 package app;
 import controllers.MainController;
+import controllers.SongMusicianController;
 import controllers.SongViewController;
 import repository.*;
 import repository.impl.*;
@@ -41,6 +42,8 @@ public class Application {
 
     //CONTROLLERS
     public final MainController mainController = new MainController();
+    public SongMusicianController songMusicianController;
+
     public  SongViewController songViewController;
 
 
