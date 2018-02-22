@@ -32,6 +32,8 @@ public class Strings {
    public static final String DIALOG_MUSICIAN_ADDED_TO_SONG  = "SUCCESS. Musician added";
    public static final String DIALOG_NEW_SONG_TITLE="New song:";
     public static final String DIALOG_EDIT_SONG_TITLE="Edit song:";
+    public static final String DIALOG_CHOOSE_SONG ="Please choose a song";
+
 
 
 

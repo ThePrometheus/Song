@@ -34,7 +34,6 @@ public class SongDetailsController  extends JDialog{
 
     private JTextField musicianShare;
 
-    private JLabel musicianName;
     private JComboBox musicianBox;
     
     private JButton buttonOK;
@@ -95,16 +94,11 @@ public class SongDetailsController  extends JDialog{
 
 
     private void setupComponents() {
-        musicians = Application.self.musicianService.all();
+
         albums = Application.self.albumService.all();
 
 
 
-        DefaultComboBoxModel<Musician> dlm = new DefaultComboBoxModel<>();
-        for (Musician m : musicians) {
-            dlm.addElement(m);
-        }
-        musicianBox.setModel(dlm);
 
         DefaultComboBoxModel<Album> dla = new DefaultComboBoxModel<>();
         for (Album a : albums){
@@ -115,20 +109,17 @@ public class SongDetailsController  extends JDialog{
         windowLabel.setText((this.createNew) ? Strings.DIALOG_NEW_SONG_TITLE : Strings.DIALOG_EDIT_SONG_TITLE);
 
         if (!this.createNew) {
-
-            try {
-                musicianSong  = Application.self.musicianSongRepository.getMusicians(currentSong.getId());
-            } catch (SQLException e) {
-                e.printStackTrace();
+            if(currentSong == null){
+                Application.showMessage(Strings.DIALOG_CHOOSE_SONG);
             }
+
+
 
             nameInput.setText(currentSong.getName());
             String author = currentSong.getAuthor();
             authorInput.setText(author);
 
            // albumInput.setText(String.valueOf(currentSong.getAlbum_id()));
-            musicianShare.setText(String.valueOf(musicianSong.get(0).getFee_share()));
-            musicianBox.setSelectedIndex(dlm.getIndexOf(musicianSong.get(0).getMusician_id()));
 
         }
     }
@@ -146,7 +137,7 @@ public class SongDetailsController  extends JDialog{
             Application.showMessage(Strings.DIALOG_EMPTY_AUTHOR_ERROR);
             return;}
 
-        song.setAlbum_id(albumBox.getSelectedIndex() );
+        song.setAlbum_id(albumBox.getSelectedIndex()+1 );
         if(song.getAlbum_id()<0) {
             Application.showMessage(Strings.DIALOG_WRONG_ALBUM_ERROR);
             return;}

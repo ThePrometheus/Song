@@ -123,6 +123,9 @@ public class SongViewController {
            e.printStackTrace();
        }
 
+
+       if(mList.size()>0){
+
        musicianLastNameLabel.setText(mList.get(0).getLastName());
        musicianNameLabel.setText(mList.get(0).getName());
        long mus_id = mList.get(0).getId();
@@ -136,7 +139,7 @@ public class SongViewController {
 
         musicianShareLabel.setText(String.valueOf(fee_share));
 
-        for (int i=1;i<mList.size();i++){
+        for (int i=1;i<mList.size();i++) {
             JPanel musNamePanel = new JPanel();
             JPanel musLastnamePanel = new JPanel();
             JPanel musFeePanel = new JPanel();
@@ -148,7 +151,7 @@ public class SongViewController {
             long temp_id = mList.get(i).getId();
             double temp_fee_share = 0;
             try {
-                temp_fee_share = Application.self.musicianSongRepository.getFee(temp_id,getCurrentId());
+                temp_fee_share = Application.self.musicianSongRepository.getFee(temp_id, getCurrentId());
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -161,12 +164,19 @@ public class SongViewController {
             //songInfoPanel.add(musFeePanel);
 
 
+        }
 
 
-
+           }else {
+           musicianLastNameLabel.setText(" - ");
+           musicianNameLabel.setText(" - ");
+           musicianShareLabel.setText(String.valueOf(0));
 
 
         }
+
+    {
+    }
 
 
 
@@ -202,7 +212,7 @@ public class SongViewController {
         int option = JOptionPane.showConfirmDialog(null, message, Strings.DIALOG_ADD_MUSICIAN, JOptionPane.OK_CANCEL_OPTION);
         if (option == JOptionPane.OK_OPTION) {
             MusicianSong ms = new MusicianSong();
-            ms.setMusician_id(musicianBox.getSelectedIndex());
+            ms.setMusician_id(musicianBox.getSelectedIndex()+1);
             ms.setSong_id(getCurrentId());
             Double fee = null;
             try {
