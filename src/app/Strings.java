@@ -34,6 +34,7 @@ public class Strings {
     public static final String DIALOG_EDIT_SONG_TITLE="Edit song:";
     public static final String DIALOG_CHOOSE_SONG ="Please choose a song";
 public  static  final String MENU_MUSICIAN_SHARE = " Musicians share";
+public static final String SHARE_CHANGED = "Share changed";
 
 
 

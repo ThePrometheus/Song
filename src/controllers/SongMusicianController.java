@@ -1,19 +1,18 @@
 package controllers;
 
 import app.Application;
-import jdk.nashorn.internal.runtime.regexp.joni.ApplyCaseFoldArg;
-import model.Album;
+import app.Strings;
 import model.Musician;
 import model.MusicianSong;
 import model.Song;
 
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
+import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,7 +22,7 @@ public class SongMusicianController extends JFrame {
     private JPanel contentView;
     private JList musicianList;
     private JLabel feeLabel;
-    private JButton addMusician;
+    private JButton changeShare;
     private JPanel shareInfoPanel;
     private Song currentSong;
     private JButton buttonCancel;
@@ -61,7 +60,42 @@ public class SongMusicianController extends JFrame {
 
         musicianList.addListSelectionListener(e -> didSelectListItem(e));
         musicianList.setSelectedIndex(0);
-        addMusician.addActionListener(e -> Application.self.songViewController.addMusician(e));
+        changeShare.addActionListener(e -> changeShare(e));
+    }
+
+    private void changeShare(ActionEvent e){
+        long mid = currentMusician.getId();
+        long sid = this.song_id;
+        double share = 0;
+        boolean updated = false;
+        JTextField feeShare = new JTextField();
+        feeShare.setText(String.valueOf(currentMusician.getRating()));
+        Object [] message = {
+                " New share",feeShare
+        };
+        int option = JOptionPane.showConfirmDialog(null,message,  Strings.MENU_SONG_CHANGE_SHARE, JOptionPane.OK_CANCEL_OPTION);
+        if (option == JOptionPane.OK_OPTION) {
+            try{
+                share = Double.parseDouble(feeShare.getText());
+
+            }catch(NumberFormatException ex){
+                Application.showMessage(Strings.DIALOG_NUMBER_FORMAT_ERROR);
+            }
+            MusicianSong ms = new MusicianSong(mid,sid,share);
+            try {
+                updated = Application.self.musicianSongRepository.update(ms);
+                if(updated){
+                    Application.showMessage(Strings.SHARE_CHANGED);
+                    reloadListData();
+                    repaintDetails();
+
+                }
+            }catch(SQLException ex){
+                ex.printStackTrace();
+            }
+
+        }
+
     }
 
     private void  reloadData(){

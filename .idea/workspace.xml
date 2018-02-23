@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17c80f0-e1fc-458b-8b3d-5667e0e1ac50" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Strings.java" afterPath="$PROJECT_DIR$/src/app/Strings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/SongMusicianController.form" afterPath="$PROJECT_DIR$/src/controllers/SongMusicianController.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/SongMusicianController.java" afterPath="$PROJECT_DIR$/src/controllers/SongMusicianController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/SongViewController.java" afterPath="$PROJECT_DIR$/src/controllers/SongViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/IMusicianSongRepository.java" afterPath="$PROJECT_DIR$/src/repository/IMusicianSongRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java" afterPath="$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/IMusicianSongService.java" afterPath="$PROJECT_DIR$/src/service/IMusicianSongService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/impl/MusicianSongService.java" afterPath="$PROJECT_DIR$/src/service/impl/MusicianSongService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -250,64 +256,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SongMusicianController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/SongMusicianController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-797">
-              <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="374">
+              <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1189#1317#0" expanded="true" />
-                <element signature="e#1316#1317#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/853c3cbe-3314-437e-9a68-3a8f3a64ef0a/console.sql">
+      <file leaf-file-name="Strings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/Strings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMusicianSongRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repository/IMusicianSongRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MusicianSongRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="69" column="20" lean-forward="false" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-              <folding>
-                <marker date="1519318896634" expanded="true" signature="2209:2279" ph="SELECT fee_s... musician_song" />
-                <marker date="1519318896634" expanded="true" signature="2335:2379" ph="SELECT * FRO... musician_song" />
-                <marker date="1519318896634" expanded="true" signature="2421:2492" ph="INSERT INTO musician_song" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -315,8 +281,8 @@
       <file leaf-file-name="SongRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/repository/impl/SongRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="96" column="37" lean-forward="false" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
+            <state relative-caret-position="380">
+              <caret line="69" column="62" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="69" selection-end-column="62" />
               <folding>
                 <marker date="1519056027355" expanded="true" signature="2138:2156" ph="SELECT * FRO... song" />
                 <marker date="1519056027355" expanded="true" signature="2211:2311" ph="SELECT * FRO... musician" />
@@ -330,34 +296,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Musician.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Musician.java">
+      <file leaf-file-name="MusicianSongRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MusicianSong.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/MusicianSong.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="93" column="113" lean-forward="false" selection-start-line="93" selection-start-column="113" selection-end-line="93" selection-end-column="113" />
               <folding>
-                <element signature="e#430#431#0" expanded="false" />
-                <element signature="e#464#465#0" expanded="false" />
-                <element signature="e#516#517#0" expanded="false" />
-                <element signature="e#562#563#0" expanded="false" />
-                <element signature="e#594#595#0" expanded="false" />
-                <element signature="e#624#625#0" expanded="false" />
-                <element signature="e#668#669#0" expanded="false" />
-                <element signature="e#706#707#0" expanded="false" />
-                <element signature="e#742#743#0" expanded="false" />
-                <element signature="e#774#775#0" expanded="false" />
-                <element signature="e#824#825#0" expanded="false" />
-                <element signature="e#866#867#0" expanded="false" />
+                <marker date="1519373619163" expanded="true" signature="2655:2725" ph="SELECT fee_s... musician_song" />
+                <marker date="1519373619163" expanded="true" signature="2781:2825" ph="SELECT * FRO... musician_song" />
+                <marker date="1519373619163" expanded="true" signature="2867:2938" ph="INSERT INTO musician_song" />
+                <marker date="1519373619163" expanded="true" signature="2985:3055" ph="UPDATE music... " />
               </folding>
             </state>
           </provider>
@@ -370,14 +318,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SongDetailsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/SongDetailsController.java">
+      <file leaf-file-name="ISongService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/ISongService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="86" column="154" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="86" selection-end-column="154" />
+            <state relative-caret-position="180">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SongViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/SongViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMusicianSongService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/IMusicianSongService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicianSongService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/impl/MusicianSongService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <element signature="e#3957#3958#0" expanded="false" />
-                <element signature="e#3982#3983#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMusicianSongRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/repository/IMusicianSongRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -432,22 +421,22 @@
         <option value="$PROJECT_DIR$/src/controllers/SongViewForm.form" />
         <option value="$PROJECT_DIR$/src/controllers/AlbumViewController.form" />
         <option value="$PROJECT_DIR$/src/controllers/AlbumDetailsController.form" />
-        <option value="$PROJECT_DIR$/src/repository/IMusicianSongRepository.java" />
-        <option value="$PROJECT_DIR$/src/service/impl/MusicianSongService.java" />
-        <option value="$PROJECT_DIR$/src/service/IMusicianSongService.java" />
-        <option value="$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java" />
         <option value="$PROJECT_DIR$/src/model/Song.java" />
         <option value="$PROJECT_DIR$/src/controllers/SonvViewController.form" />
         <option value="$PROJECT_DIR$/src/controllers/SongDetailsController.java" />
-        <option value="$PROJECT_DIR$/src/app/Strings.java" />
         <option value="$PROJECT_DIR$/src/controllers/SongDetailsController.form" />
-        <option value="$PROJECT_DIR$/src/controllers/SongViewController.java" />
         <option value="$PROJECT_DIR$/src/app/Application.java" />
         <option value="$PROJECT_DIR$/src/controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/controllers/SongMusicianController.form" />
         <option value="$PROJECT_DIR$/src/model/MusicianSong.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/853c3cbe-3314-437e-9a68-3a8f3a64ef0a/console.sql" />
         <option value="$PROJECT_DIR$/src/model/Musician.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/853c3cbe-3314-437e-9a68-3a8f3a64ef0a/console.sql" />
+        <option value="$PROJECT_DIR$/src/service/IMusicianSongService.java" />
+        <option value="$PROJECT_DIR$/src/service/impl/MusicianSongService.java" />
+        <option value="$PROJECT_DIR$/src/repository/IMusicianSongRepository.java" />
+        <option value="$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java" />
+        <option value="$PROJECT_DIR$/src/app/Strings.java" />
+        <option value="$PROJECT_DIR$/src/controllers/SongMusicianController.form" />
+        <option value="$PROJECT_DIR$/src/controllers/SongViewController.java" />
         <option value="$PROJECT_DIR$/src/controllers/SongMusicianController.java" />
       </list>
     </option>
@@ -683,6 +672,10 @@
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SongViewController" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -704,6 +697,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="SongMusicianController" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Studio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Studio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1237,12 +1248,12 @@
       <workItem from="1519034870095" duration="17866000" />
       <workItem from="1519224646658" duration="5148000" />
       <workItem from="1519311185763" duration="22028000" />
-      <workItem from="1519371074138" duration="1017000" />
+      <workItem from="1519371074138" duration="4102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58155000" />
+    <option name="totallyTimeSpent" value="61240000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1259,12 +1270,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30522767" sideWeight="0.509178" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5123703" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022346368" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13727055" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980047" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1274,14 +1285,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.43507588" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.49082202" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67790896" sideWeight="0.49401435" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59865093" sideWeight="0.49401435" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.48762968" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5581787" sideWeight="0.49082202" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21867518" sideWeight="0.49029127" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21867518" sideWeight="0.50970876" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21867518" sideWeight="0.50970876" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1366,13 +1377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repository/impl/AlbumRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/repository/IAlbumRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1392,13 +1396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/repository/impl/MusicianRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="71" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1463,13 +1460,6 @@
             <element signature="e#2345#2346#0" expanded="false" />
             <element signature="e#2383#2384#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/IMusicianSongService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1624,43 +1614,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/90ed0f96/853c3cbe-3314-437e-9a68-3a8f3a64ef0a/studio.musician_song">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/impl/SongService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="47" column="64" lean-forward="false" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/ISongService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/impl/MusicianSongService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="26" column="61" lean-forward="true" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1684,29 +1642,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/SongViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="59" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="52" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1210#1211#0" expanded="false" />
-            <element signature="e#1244#1245#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/SongDetailsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="86" column="154" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="86" selection-end-column="154" />
-          <folding>
-            <element signature="e#3957#3958#0" expanded="false" />
-            <element signature="e#3982#3983#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="980">
@@ -1717,14 +1652,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/SongMusicianController.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/model/Musician.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/SongDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#1807#1935#0" expanded="false" />
+            <element signature="e#1934#1935#0" expanded="false" />
+            <element signature="e#3957#3958#0" expanded="false" />
+            <element signature="e#3982#3983#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repository/impl/AlbumRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1518970418595" expanded="true" signature="2919:3131" ph="SELECT * FRO... album" />
+            <marker date="1518970418595" expanded="true" signature="2958:3080" ph="SELECT id, (... album" />
+            <marker date="1518970418595" expanded="true" signature="2970:3060" ph="SELECT (SELE... " />
+            <marker date="1518970418595" expanded="true" signature="2978:3029" ph="SELECT COUNT... sale" />
+            <marker date="1518970418595" expanded="true" signature="3034:3059" ph="SELECT COUNT... sale" />
+            <marker date="1518970418595" expanded="true" signature="3175:3361" ph="SELECT * fro... album" />
+            <marker date="1518970418595" expanded="true" signature="3207:3315" ph="SELECT ? as " />
+            <marker date="1518970418595" expanded="true" signature="3231:3275" ph="SELECT COUNT... sale" />
+            <marker date="1518970418595" expanded="true" signature="3280:3305" ph="SELECT COUNT... sale" />
+            <marker date="1518970418595" expanded="true" signature="3408:3506" ph="INSERT INTO album... " />
+            <marker date="1518970418595" expanded="true" signature="3553:3652" ph="UPDATE album... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repository/impl/MusicianRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="71" column="5" lean-forward="false" selection-start-line="61" selection-start-column="3" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1479#1480#0" expanded="false" />
+            <element signature="e#1507#1508#0" expanded="false" />
+            <element signature="e#1605#1606#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <marker date="1518971957848" expanded="true" signature="1701:1940" ph="SELECT * FRO... musician" />
+            <marker date="1518971957848" expanded="true" signature="1743:1915" ph="SELECT id, (... musician" />
+            <marker date="1518971957848" expanded="true" signature="1755:1892" ph="SELECT (SELE... " />
+            <marker date="1518971957848" expanded="true" signature="1763:1861" ph="SELECT COUNT... sale" />
+            <marker date="1518971957848" expanded="true" signature="1866:1891" ph="SELECT COUNT... sale" />
+            <marker date="1518971957848" expanded="true" signature="1984:2238" ph="SELECT * FRO... musician" />
+            <marker date="1518971957848" expanded="true" signature="2026:2198" ph="SELECT id, (... musician" />
+            <marker date="1518971957848" expanded="true" signature="2038:2175" ph="SELECT (SELE... " />
+            <marker date="1518971957848" expanded="true" signature="2046:2144" ph="SELECT COUNT... sale" />
+            <marker date="1518971957848" expanded="true" signature="2149:2174" ph="SELECT COUNT... sale" />
+            <marker date="1518971957848" expanded="true" signature="2289:2586" ph="SELECT * FRO... musician" />
+            <marker date="1518971957848" expanded="true" signature="2331:2503" ph="SELECT id, (... musician" />
+            <marker date="1518971957848" expanded="true" signature="2343:2480" ph="SELECT (SELE... " />
+            <marker date="1518971957848" expanded="true" signature="2351:2449" ph="SELECT COUNT... sale" />
+            <marker date="1518971957848" expanded="true" signature="2454:2479" ph="SELECT COUNT... sale" />
+            <marker date="1518971957848" expanded="true" signature="2546:2585" ph="SELECT manag... album" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/MusicianSong.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
+        <state relative-caret-position="503">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="e#430#431#0" expanded="false" />
@@ -1743,32 +1745,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repository/IMusicianSongRepository.java">
+    <entry file="dbDummy://dbtable:/90ed0f96/853c3cbe-3314-437e-9a68-3a8f3a64ef0a/studio.musician_song">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/853c3cbe-3314-437e-9a68-3a8f3a64ef0a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/ISongService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/impl/MusicianSongService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="69" column="20" lean-forward="false" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-          <folding>
-            <marker date="1519318896634" expanded="true" signature="2209:2279" ph="SELECT fee_s... musician_song" />
-            <marker date="1519318896634" expanded="true" signature="2335:2379" ph="SELECT * FRO... musician_song" />
-            <marker date="1519318896634" expanded="true" signature="2421:2492" ph="INSERT INTO musician_song" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/repository/impl/SongRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="96" column="37" lean-forward="false" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
+        <state relative-caret-position="380">
+          <caret line="69" column="62" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="69" selection-end-column="62" />
           <folding>
             <marker date="1519056027355" expanded="true" signature="2138:2156" ph="SELECT * FRO... song" />
             <marker date="1519056027355" expanded="true" signature="2211:2311" ph="SELECT * FRO... musician" />
@@ -1781,30 +1800,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Musician.java">
+    <entry file="file://$PROJECT_DIR$/src/repository/IMusicianSongRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        <state relative-caret-position="220">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repository/impl/MusicianSongRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="93" column="113" lean-forward="false" selection-start-line="93" selection-start-column="113" selection-end-line="93" selection-end-column="113" />
+          <folding>
+            <marker date="1519373619163" expanded="true" signature="2655:2725" ph="SELECT fee_s... musician_song" />
+            <marker date="1519373619163" expanded="true" signature="2781:2825" ph="SELECT * FRO... musician_song" />
+            <marker date="1519373619163" expanded="true" signature="2867:2938" ph="INSERT INTO musician_song" />
+            <marker date="1519373619163" expanded="true" signature="2985:3055" ph="UPDATE music... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/853c3cbe-3314-437e-9a68-3a8f3a64ef0a/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/controllers/SongMusicianController.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/IMusicianSongService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/SongViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/SongMusicianController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-797">
-          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="374">
+          <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1189#1317#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
           </folding>
         </state>
       </provider>

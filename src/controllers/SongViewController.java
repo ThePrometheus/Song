@@ -139,32 +139,7 @@ public class SongViewController {
 
         musicianShareLabel.setText(String.valueOf(fee_share));
 
-        for (int i=1;i<mList.size();i++) {
-            JPanel musNamePanel = new JPanel();
-            JPanel musLastnamePanel = new JPanel();
-            JPanel musFeePanel = new JPanel();
-            JLabel musNameLabel = new JLabel("Name:");
-            JLabel musLastnameLabel = new JLabel("Last name:");
-            JLabel musFeeSharelabel = new JLabel("Fee:");
-            musNameLabel.setText(mList.get(i).getName());
-            musLastnameLabel.setText(mList.get(i).getLastName());
-            long temp_id = mList.get(i).getId();
-            double temp_fee_share = 0;
-            try {
-                temp_fee_share = Application.self.musicianSongRepository.getFee(temp_id, getCurrentId());
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            musFeeSharelabel.setText(String.valueOf(temp_fee_share));
-            musNamePanel.add(musNameLabel);
-            musLastnamePanel.add(musLastnameLabel);
-            musFeePanel.add(musFeeSharelabel);
-            //songInfoPanel.add(musNamePanel);
-            //songInfoPanel.add(musLastnamePanel);
-            //songInfoPanel.add(musFeePanel);
 
-
-        }
 
 
            }else {

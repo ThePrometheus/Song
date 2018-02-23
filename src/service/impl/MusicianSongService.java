@@ -27,4 +27,9 @@ public class MusicianSongService implements IMusicianSongService {
     public double getFee(long mid, long sid) throws  SQLException{
         return Application.self.musicianSongRepository.getFee(mid,sid);
     }
+
+    @Override
+    public boolean update(MusicianSong song) throws SQLException {
+        return Application.self.musicianSongRepository.update(song);
+    }
 }
