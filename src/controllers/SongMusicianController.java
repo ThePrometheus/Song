@@ -27,13 +27,14 @@ public class SongMusicianController extends JFrame {
     private JPanel shareInfoPanel;
     private Song currentSong;
     private JButton buttonCancel;
-    private List<MusicianSong> dataSource;
-    private MusicianSong currentMusicianSong;
+    private List<Musician> dataSource;
+    private Musician currentMusician;
     private long song_id;
 
 
     public SongMusicianController(long id){
         System.out.println("Id:"+id);
+        this.song_id=id;
 
     setup();
     }
@@ -68,7 +69,7 @@ public class SongMusicianController extends JFrame {
             System.out.println("2");
 
 
-            dataSource = Application.self.musicianSongRepository.getMusicians(this.song_id);
+            dataSource = Application.self.songRepository.getSongMusicians(this.song_id);
             System.out.println("3");
         }
         catch(SQLException e){
@@ -80,9 +81,8 @@ public class SongMusicianController extends JFrame {
         System.out.println("1");
         reloadData();
 
-
-        DefaultListModel<MusicianSong> dlm = new DefaultListModel<>();
-        for (MusicianSong s : dataSource) {
+        DefaultListModel<Musician> dlm = new DefaultListModel<>();
+        for (Musician s : dataSource) {
             dlm.addElement(s);
             System.out.println("added musicians" + s.toString());
         }
@@ -96,7 +96,7 @@ public class SongMusicianController extends JFrame {
     private void didSelectListItem(ListSelectionEvent e) {
         int index = musicianList.getSelectedIndex();
         if (index < 0) return;
-        currentMusicianSong = dataSource.get(index);
+        currentMusician = dataSource.get(index);
 
         repaintDetails();
 
@@ -106,7 +106,7 @@ public class SongMusicianController extends JFrame {
 
 
     private void repaintDetails(){
-        feeLabel.setText(String.valueOf(currentMusicianSong.getFee_share()));
+        feeLabel.setText(String.valueOf(currentMusician.getRating()));
 
 
 
@@ -125,5 +125,10 @@ public class SongMusicianController extends JFrame {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
+    }
+    public static void main (String [] args){
+        System.out.println("start");
+        SongMusicianController.presentDialog(1);
+
     }
 }
