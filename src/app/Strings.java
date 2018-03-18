@@ -10,11 +10,7 @@ public class Strings {
 
     public static final String MENU_SONG_NEW = "New";
 
-    public static final String MENU_SONG_MUSICIAN = "Musician";
 
-    public static final String MENU_SONG_ADD_MUSICIAN = "Add musician";
-
-    public static final String MENU_SONG_SHARE = "Share";
     public static final String MENU_SONG_CHANGE_SHARE = "Change share";
 
     public static final String MENU_SONG_HELP = "Help";
@@ -24,7 +20,6 @@ public class Strings {
     public static final String MENU_SONG_ABOUT_US = "About us";
 
     public static final String  DIALOG_FAILED_INSERTIONS_SONG = " Failed at insertion of song";
-    public static final String DIALOG_WRONG_SHARE = "Wrong share";
 
    public  static final String  DIALOG_EMPTY_AUTHOR_ERROR = "Please input author name";
    public static final String  DIALOG_WRONG_ALBUM_ERROR = "Wrong album name";
@@ -47,20 +42,8 @@ public static final String SHARE_CHANGED = "Share changed";
 
 // Frankiv's strings
 
-    public static final String MENU_ALBUM = "Album";
-    public static final String MENU_ALBUM_NEW = "New...";
-    public static final String MENU_ALBUM_EDIT_CURRENT = "Edit current...";
-
-    public static final String MENU_HELP = "Help";
-    public static final String MENU_HELP_DOCS = "Documentation";
-    public static final String MENU_HELP_ABOUT = "About";
-
-    public static final String DIALOG_NEW_PRICE = "Please specify new price: ";
     public static final String DIALOG_NUMBER_FORMAT_ERROR = "Please specify correct number!";
     public static final String DIALOG_ILLEGAL_PRICE_CHANGE_ERROR = "Cannot change price more often than once a day";
     public static final String DIALOG_EMPTY_NAME_ERROR = "Please specify name";
-    public static final String DIALOG_EMPTY_DATE_ERROR = "Please specify date";
 
-    public static final String DIALOG_NEW_TITLE = "New album:";
-    public static final String DIALOG_EDIT_TITLE = "Edit album:";
 }

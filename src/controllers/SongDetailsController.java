@@ -30,19 +30,13 @@ public class SongDetailsController  extends JDialog{
 
 
 
-    private JTextField albumInput;
-
-    private JTextField musicianShare;
-
-    private JComboBox musicianBox;
-    
     private JButton buttonOK;
     private JButton buttonCancel;
     private JComboBox albumBox;
 
-    private List<Musician> musicians;
+
     private List<Album> albums;
-    private List<MusicianSong> musicianSong;
+
     private JTextField authorInput;
 
     private Song currentSong;
